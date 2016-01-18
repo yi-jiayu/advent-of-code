@@ -24,6 +24,5 @@ with open('../input/day3') as f:
                 y -= 1
             drop_present()
 
-print('Number of houses which receive more than one present: ' + str(len([house for house in houses.values() if house > 0])))
-
-
+houses_receiving_more_than_1_present = len([house for house in houses.values() if house > 0])
+print('{} houses receive more than one present!'.format(houses_receiving_more_than_1_present))

@@ -12,7 +12,7 @@ with open('../input/day1') as f:
             if position_semaphore:
                 position += 1
                 if floor == -1:
-                    print('Santa entered the basement for the first time at position: ' + str(position))
+                    print('Santa entered the basement for the first time at position {}.'.format(position))
                     position_semaphore = 0
 
-print('Santa ends up at floor: ' + str(floor))
+print('Santa ends up at floor {}.'.format(floor))

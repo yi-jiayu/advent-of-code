@@ -1,7 +1,7 @@
 from tqdm import tqdm
 from hashlib import md5
 
-TARGET = '000000'
+TARGET = '00000'
 SECRET_KEY = 'yzbqklnj'
 nonce = 0
 hash_ = ''
@@ -15,4 +15,4 @@ with tqdm() as pbar:
         hash_ = m.hexdigest()
         pbar.update(1)
 
-print(nonce)
+print('Done! \nAnswer: {}'.format(nonce))
