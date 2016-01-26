@@ -3,7 +3,7 @@ import re
 lights = [int('0' * 1000, 2) for i in range(1000)]
 
 regex = re.compile(
-        r'(?P<op>(?:turn off)|(?:toggle)|(?:turn on)) (?P<c1x>\d+),(?P<c1y>\d+) through (?P<c2x>\d+),(?P<c2y>\d+)')
+        '(?P<op>(?:turn off)|(?:toggle)|(?:turn on)) (?P<c1x>\d+),(?P<c1y>\d+) through (?P<c2x>\d+),(?P<c2y>\d+)')
 
 with open('../input/day6') as f:
     for line in f:
