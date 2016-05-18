@@ -1,6 +1,7 @@
 DAY_10_INPUT = '1113222113'
 NUM_ITERATIONS = 40
 
+
 def tokenise_digits(number: str) -> list:
     current_char = number[0]
     current_char_count = 1
